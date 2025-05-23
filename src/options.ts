@@ -238,7 +238,7 @@ export function getCommonCommandOpts() {
   );
   const namespace = createOption(
     '--namespace <name>',
-    'kibana namespace to use for the monitor, default would be project spaceId'
+    'Kibana namespace to use for the monitor. Defaults to the spaceId of the current project.'
   );
   const fields = createOption(
     '--fields <jsonstring>',
