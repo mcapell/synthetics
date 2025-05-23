@@ -236,6 +236,10 @@ export function getCommonCommandOpts() {
     '--match <name>',
     'run/push tests with a name or tags that matches a pattern'
   );
+  const namespace = createOption(
+    '--namespace <name>',
+    'kibana namespace to use for the monitor, default would be project spaceId'
+  );
   const fields = createOption(
     '--fields <jsonstring>',
     'add fields to the monitor(s) in the format { "key": "value"}'
@@ -265,6 +269,7 @@ export function getCommonCommandOpts() {
     tags,
     match,
     fields,
+    namespace,
   };
 }
 
